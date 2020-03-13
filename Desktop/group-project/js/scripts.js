@@ -1,26 +1,3 @@
-
-
-var enterAlley = confirm("Say, son what'cha got over there? How about takin' Ladybird out for a walk?")
-
-if (vidjaGames == "Bobby") {
-  alert("Baughhghaaghghagh!!!!!")
-}
-
-if () {
-  
-}
-if(enterAlley == true)  {
-  var walkDog = prompt("Bobby your mother raised you right, boy I tell you w'hat!")
-}
-
-else(seeKahnJr == true)  {
-
-}
-
-
-
-///////////////////////////////////////////////////*
-
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
 
@@ -69,7 +46,7 @@ const textNodes = [
     options: [
       {
         text: 'Take the dog leash',
-        setState: { /*change blueGoo to dogLeashWhip*/ blueGoo: true },
+        setState: { blueGoo: true },
         nextText: 2
       },
       {
@@ -85,12 +62,12 @@ const textNodes = [
       {
         text: 'Trade the dog leash whip for a sword',
         requiredState: (currentState) => currentState.blueGoo,
-        setState: { /*change blueGoo to dogLeashWhip*/ blueGoo: false, sword: true },
+        setState: { blueGoo: false, sword: true },
         nextText: 3
       },
       {
         text: 'Trade the goo for a shield',
-        requiredState: (currentState) => currentState./*change blueGoo to dogLeashWhip*/blueGoo,
+        requiredState: (currentState) => currentState.blueGoo,
         setState: { blueGoo: false, shield: true },
         nextText: 3
       },
@@ -168,7 +145,7 @@ const textNodes = [
       },
       {
         text: 'Throw the blue goo at it',
-        requiredState: (currentState) => currentState./*change blueGoo to dogLeashWhip*/blueGoo,
+        requiredState: (currentState) => currentState.blueGoo,
         nextText: 11
       }
     ]
@@ -216,4 +193,3 @@ const textNodes = [
 ]
 
 startGame()
-*/
